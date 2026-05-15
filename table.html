@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Generator</title>
+  <link rel="stylesheet" href="table.css">
+</head>
+<body>
+
+  <a href="index.html" class="back">← رجوع للرئيسية</a>
+
+  <h1>📋 Table Generator</h1>
+
+  <div class="form-area">
+    <input type="text" id="nameInput" placeholder="الاسم">
+    <input type="text" id="roleInput" placeholder="الوظيفة">
+    <select id="statusInput">
+      <option value="Active">Active</option>
+      <option value="Pending">Pending</option>
+      <option value="Inactive">Inactive</option>
+    </select>
+    <button onclick="addRow()">إضافة موظف</button>
+  </div>
+
+  <table id="myTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>الاسم</th>
+        <th>الوظيفة</th>
+        <th>الحالة</th>
+        <th>حذف</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <script src="table.js"></script>
+</body>
+</html>

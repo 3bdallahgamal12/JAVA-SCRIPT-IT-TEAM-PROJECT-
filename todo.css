@@ -1,0 +1,78 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #4a90e2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.back:hover { text-decoration: underline; }
+
+h1 { color: #333; margin-bottom: 20px; }
+
+.input-area {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:focus { border-color: #4a90e2; }
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover { background-color: #357abd; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+li {
+  background-color: white;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+li.done span { text-decoration: line-through; color: #aaa; }
+li span { font-size: 15px; flex: 1; text-align: right; }
+
+.btn-done   { background-color: #28a745; margin-left: 6px; }
+.btn-done:hover { background-color: #1e7e34; }
+.btn-edit   { background-color: #ffc107; color: #333; margin-left: 6px; }
+.btn-edit:hover { background-color: #e0a800; }
+.btn-delete { background-color: #dc3545; }
+.btn-delete:hover { background-color: #b02a37; }
